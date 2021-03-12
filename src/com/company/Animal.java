@@ -23,18 +23,25 @@ public class Animal {
     }
 
     void feed(){
-        this.weight += 1;
-        System.out.println("Thx for food, bro");
-    }
-
-    void takeForAWalk(){
-        this.weight -= 1;
-        System.out.println("I lost 1kg bro");
         if(weight > 0) {
+            this.weight += 1;
+            System.out.println("Thx for food, bro");
             System.out.println("Im happy doggeh");
         }
         else{
-            System.out.println("Im dead bro");
+            System.out.println("Im dead bro, why are u feedin me?");
+        }
+
+    }
+
+    void takeForAWalk(){
+        if(weight > 0) {
+            this.weight -= 1;
+            System.out.println("Thx for walk, bro");
+            System.out.println("Im happy doggeh");
+        }
+        else{
+            System.out.println("Im dead bro, what do u want?");
         }
     }
 
