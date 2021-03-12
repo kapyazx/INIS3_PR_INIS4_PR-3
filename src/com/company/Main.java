@@ -3,14 +3,17 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	Animal dog = new Animal( "dog", 20.0, "Szarik" );
-
-
 	Human me = new Human();
-	me.firstName = "Kacper";
-	me.lastName = "Piasecki";
-	me.pet = dog;
+	me.pet = new Animal("dog", 5.0, "Milka");
+	System.out.println(me.pet.name);
+	System.out.println(me.pet.species);
 
-	System.out.println("Zawierzak nazywa się: " + me.pet.name);
+		me.pet.takeForAWalk();
+		me.pet.takeForAWalk();
+		me.pet.takeForAWalk();
+		me.pet.takeForAWalk();
+		me.pet.takeForAWalk();
+		me.pet.takeForAWalk();
+		me.pet.takeForAWalk();
     }
 }
