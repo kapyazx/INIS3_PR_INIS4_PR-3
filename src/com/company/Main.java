@@ -15,6 +15,14 @@ public class Main {
 		Human Kacper = new Human();
 		Kacper.pet = new Animal("dog", 5.0, "Milka");
 
+		Human me = new Human();
+		me.pet = new Animal("dog");
+
+		Human brother = new Human();
+		brother.cash = 10000.0;
+
+		me.pet.sell(me,brother, 300.0);
+
 
 	System.out.println(Kacper.pet.name);
 	System.out.println(Kacper.pet.species);
