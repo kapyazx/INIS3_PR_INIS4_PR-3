@@ -12,17 +12,12 @@ public class Phone {
         this.screenSize = screenSize;
         this.operationSystem = operationSystem;
 
-
-
-
-    Integer x = 4;
-    int y =2;
-    double a =2.0;
-    long z = 3423424;
-    float b = -0.123f;
-    boolean f = false;
-    byte b1;
-
-
     }
+
+    public String toString() {
+        return "Phone: producer - " + this.producer + " model - " + model;
+    }
+
 }
+
+
