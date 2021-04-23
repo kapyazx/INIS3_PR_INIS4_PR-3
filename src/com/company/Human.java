@@ -7,5 +7,12 @@ public class Human {
     public Animal pet;
     public Car car;
 
+    @Override
+    public String toString() {
+        return "Human{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
 
+    }
 }
