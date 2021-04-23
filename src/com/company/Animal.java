@@ -72,7 +72,6 @@ public class Animal implements Salleable {
             buyer.pet = seller.pet;
             seller.pet = null;
             System.out.println("Transakcja udana sprzedano " + this + "za" + price);
-
         }
     }
 }
