@@ -7,6 +7,11 @@ public class Human extends Animal{
     public Animal pet;
     public Car car;
 
+    static final public String SPECIES = "homo sapiens";
+
+    public Human() {
+        super(SPECIES);
+    }
     @Override
     public String toString() {
         return "Human{" +
