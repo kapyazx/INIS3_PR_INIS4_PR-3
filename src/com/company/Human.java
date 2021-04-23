@@ -1,6 +1,6 @@
 package com.company;
 
-public class Human {
+public class Human extends Animal{
     public String firstName;
     public String lastName;
     protected String phone;
