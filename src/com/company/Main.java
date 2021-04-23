@@ -3,6 +3,8 @@ package com.company;
 import com.company.device.Car;
 import com.company.device.Phone;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,9 +16,16 @@ public class Main {
 		Kacper.pet = new Animal("dog", 5.0, "Milka");
 
 
-
 	System.out.println(Kacper.pet.name);
 	System.out.println(Kacper.pet.species);
+
+	Human[] people = new Human[3];
+	people[0] = new Human();
+	people[1] = new Human();
+	people[2] = new Human();
+
+	Arrays.sort(people);
+
 
 		Kacper.pet.takeForAWalk();
 		Kacper.pet.takeForAWalk();

@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.device.Car;
 
-public class Human extends Animal{
+public class Human extends Animal implements Washable, Comparable<Human>{
     public String firstName;
     public String lastName;
     protected String phone;
@@ -20,6 +20,19 @@ public class Human extends Animal{
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
+    }
+    @Override
+    public void wash() {
+        System.out.println("myju myju");
+    }
 
+    @Override
+    public void dry() {
+        System.out.println("szuuuuuuuuuuuuu");
+    }
+
+    @Override
+    public int compareTo(Human otherHuman) {
+        return (int) (this.weight - otherHuman.weight);
     }
 }
